@@ -1,0 +1,130 @@
+body , h5 , h4{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 600;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.product{
+    height: 160vh;
+    padding: 65px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.product-list{
+    height: 100%;
+}
+
+.product-list h4{
+    font-size: 26px;
+    margin-bottom: 12px;
+    
+}
+.cards-container{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    grid-template-rows: repeat(3 , 370px);
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+
+h5:last-of-type{
+   color: hsl(14, 86%, 42%);
+}
+h5:first-of-type{
+    color: hsl(7, 20%, 60%);
+    font-size: 12px;
+ }
+
+img{
+    width: 260px;
+    margin-bottom: 42px;
+    border-radius: 12px;
+
+}
+
+button{
+    position: absolute;
+    top: 66%;
+    left: 28%;
+    padding: 8px 22px;
+    background-color: white;
+    color:hsl(14, 65%, 9%);
+    border: 1px solid  hsl(12, 20%, 44%);
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-box{
+    background-color: white;
+    height: 35vh;
+    padding: 35px 25px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.cart-box h2{
+    color: hsl(14, 86%, 42%);
+    margin: 0;
+}
+
+.cart-illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h6{
+   color: hsl(7, 20%, 60%);
+   font-weight: 600;
+}
+
+/* Responsive Display */
+
+@media screen  and (max-width:568px){
+    
+    .product{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-list h4{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    button{
+        left: 24%;
+    }
+}
